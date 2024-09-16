@@ -1,3 +1,1 @@
-This is main.
-
-Check branches, as all code goes there.
+Maximum Subarray (Kadane’s Algorithm)
