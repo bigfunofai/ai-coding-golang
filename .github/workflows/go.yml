@@ -21,7 +21,7 @@ jobs:
         cache: false
 
     - name: Init module
-      run: go mod init github.com/ai-coding-golang
+      run: rm go.mod && go mod init github.com/ai-coding-golang
     - name: Install dependencies
       run: go get .
     - name: Build
