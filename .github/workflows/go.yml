@@ -20,7 +20,13 @@ jobs:
         go-version: '1.23.1'
         cache: false
 
+    - name: Init module
+      run: go mod init github.com/ai-coding-golang
+    - name: Install dependencies
+      run: go get .
     - name: Build
-      run: go build -v .
+      run: go build -v ./...
+    - name: Test 
+      run: go test
 
 
